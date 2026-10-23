@@ -35,6 +35,7 @@ function ResearchPage() {
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState<string | null>(null);
   const [versions, setVersions] = useState<Version[]>([]);
+  const [lastContext, setLastContext] = useState("");
 
   useEffect(() => {
     const s = getSession();

@@ -67,10 +67,10 @@ export const fetchPageText = createServerFn({ method: "POST" })
       const html = await res.text();
 
       const titleMatch = /<title[^>]*>([\s\S]*?)<\/title>/i.exec(html);
-      const title = titleMatch ? decodeEntities(titleMatch[1]).replace(/\s+/g, " ").trim().slice(0, 200) : "";
+      const title = titleMatch && titleMatch[1] ? decodeEntities(titleMatch[1]).replace(/\s+/g, " ").trim().slice(0, 200) : "";
 
       const bodyMatch = /<body[^>]*>([\s\S]*?)<\/body>/i.exec(html);
-      let text = bodyMatch ? bodyMatch[1] : html;
+      let text = (bodyMatch && bodyMatch[1]) || html;
       text = text
         .replace(/<(script|style|noscript|svg|iframe|nav|footer|header)[\s\S]*?<\/\1>/gi, " ")
         .replace(/<!--[\s\S]*?-->/g, " ")

@@ -66,12 +66,12 @@ function ResearchPage() {
           content: `Analyse the content of the web page below and produce your structured analysis.${focusLine}\n\nWeb page content:\n"""\n${page.text}\n"""`,
         },
       ];
-      contextLabel = `Research of web page: ${url.trim()}${focus.trim() ? ` — focus: ${focus.trim()}` : ""}`;
+      setLastContext(`Research of web page: ${url.trim()}${focus.trim() ? ` — focus: ${focus.trim()}` : ""}`);
     } else {
       if (!q.trim()) return setErr("Please enter a question, topic or article text.");
       setErr(null);
       messages = [{ role: "user" as const, content: q }];
-      contextLabel = `Research request: ${q.slice(0, 3000)}`;
+      setLastContext(`Research request: ${q.slice(0, 3000)}`);
     }
     setLoading(true);
     try {
@@ -132,7 +132,7 @@ function ResearchPage() {
               markdown
               versions={versions}
               setVersions={setVersions}
-              context={contextLabel}
+              context={lastContext}
               onRegenerate={generate}
               regenerating={loading}
               extraActions={(text) => (

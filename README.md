@@ -1,62 +1,240 @@
-# Workwise AI
+# AI Workplace Productivity Assistant
 
-Build a modern, responsive web application called AI Workplace Productivity Assistant, a professional SaaS-style platform that helps users complete workplace tasks efficiently using AI.
+## Project Overview
 
-Design & Navigation
+**AI Workplace Productivity Assistant** is a modern, AI-powered web application designed to help professionals streamline everyday workplace tasks, improve communication and increase productivity.
 
-Create a polished dashboard with sidebar navigation, modern cards, intuitive icons, clean typography and responsive desktop/mobile layouts. Include a functional Light/Dark Mode toggle and a welcome dashboard with quick access to all AI tools.
+The application combines intelligent email generation, research assistance and conversational AI within a single, user-friendly platform. It also incorporates structured prompt engineering using the CFREI (Context, Format, Role, Examples, Instructions) framework and iterative AI refinement to help users generate more relevant, accurate and useful responses.
 
-Core AI Tools
+The project demonstrates the practical application of artificial intelligence, prompt engineering and responsible AI principles in a professional working environment.
 
-1. Smart Email Generator: Users provide the email purpose, recipient and key details, then choose a tone (Formal, Friendly or Persuasive). Generate a personalised professional email with a subject line. Allow editing, copying and regeneration.
+## Problem Statement
 
-2. AI Research Assistant: Users enter a research question, topic or paste article text. Generate structured summaries, key insights and actionable recommendations. Clearly communicate uncertainty and avoid fabricated sources.
+Professionals often spend considerable time drafting emails, researching information and completing repetitive communication tasks. These activities can reduce productivity and limit the time available for more important responsibilities.
 
-3. AI Workplace Chatbot: Create an interactive conversational assistant for workplace questions, problem-solving and productivity advice. Support contextual responses, follow-up questions and clearing conversation history.
+Although AI tools can assist with these challenges, users may struggle to formulate effective prompts or refine AI-generated responses.
 
-CFREI Prompt Engineering
+The AI Workplace Productivity Assistant addresses these challenges by providing an accessible platform that combines workplace automation with guided prompt engineering and iterative improvement.
 
-Integrate an optional AI Prompt Builder using Context, Format, Role, Examples and Instructions (CFREI). Provide five guided fields with brief explanations and examples. Automatically combine inputs into a structured prompt users can preview, edit and submit to any AI tool. Show original and enhanced prompts side by side.
+## Key Features
 
-AI Iteration & Creativity
+### 1. Smart Email Generator
 
-Include Refine with AI actions: Shorten, Expand, Simplify and Change Tone, plus custom refinement instructions. Preserve original and revised outputs in a simple session-based version history for comparison.
+The Smart Email Generator helps users create professional, context-specific workplace emails.
 
-Add Smart Tool Handoff to transfer research summaries directly into the Email Generator. Include three clickable example prompts for each AI tool.
+**Features:**
 
-Genuine AI Functionality
+- Generate emails based on user instructions.
+- Choose between Formal, Friendly and Persuasive tones.
+- Automatically generate email subject lines.
+- Edit AI-generated emails.
+- Copy responses to the clipboard.
+- Regenerate and refine email content.
 
-Use Lovable's supported AI integration for real, contextual and non-generic AI responses. Apply structured, task-specific instructions for each tool and maintain relevant context during refinement. Include loading states, error handling, editable outputs, copy and regenerate functionality. Never substitute hardcoded responses for AI generation.
+### 2. AI Research Assistant
 
-Responsible AI
+The AI Research Assistant helps users understand information and extract meaningful insights.
 
-Display: "AI-generated content may contain errors. Verify important information before use. Do not enter confidential or sensitive workplace information."
+**Features:**
 
-Include an "AI-generated — review before use" reminder near outputs and a concise Responsible AI section explaining hallucinations, bias, privacy and human oversight.
+- Summarise research topics and articles.
+- Identify key findings and insights.
+- Generate actionable recommendations.
+- Present information in a structured format.
+- Highlight uncertainty and limitations.
+- Allow users to edit and refine generated responses.
 
-Technical Requirements
+### 3. AI Workplace Chatbot
 
-Build a frontend-focused application without a custom backend, database, authentication or user accounts. Use temporary session state for conversations and outputs. Use secure managed AI integration if required, without exposing API keys in frontend code. Ensure all navigation, buttons, editing, copying, theme switching and AI features work correctly.
+The AI Workplace Chatbot provides conversational assistance for everyday workplace challenges.
 
-Implementation Priority: Deliver a cohesive, fully functional application using reusable components and minimal dependencies. Prioritise genuine AI responses, structured prompting, iteration and responsive user experience. Avoid unnecessary features, complex architecture and decorative elements that do not improve functionality.
+**Features:**
 
-This project was built with [Lovable](https://lovable.dev).
+- Respond to workplace-related questions.
+- Provide productivity recommendations.
+- Assist with professional problem-solving.
+- Support follow-up questions.
+- Maintain conversational context during the current session.
+- Allow users to clear conversation history.
 
-## Build with Lovable
+## CFREI Prompt Engineering Framework
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/1a577167-2d7f-4f88-987a-9b98b4f7254b).
+The application incorporates the **CFREI framework** to help users create effective and structured AI prompts.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+CFREI consists of five components:
 
-## Development
+| Component    | Description                                                  |
+| ------------ | ------------------------------------------------------------ |
+| Context      | Provides background information about the task or situation. |
+| Format       | Specifies how the AI response should be presented.           |
+| Role         | Defines the role or expertise the AI should adopt.           |
+| Examples     | Provides examples or references to guide the response.       |
+| Instructions | Clearly explains what the AI should accomplish.              |
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+### AI Prompt Builder
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+The Prompt Builder guides users through the five CFREI components using structured input fields.
+
+Users can:
+
+- Provide relevant information for each component.
+- Generate a structured prompt.
+- Preview and edit the enhanced prompt.
+- Compare original and improved prompts.
+- Submit the structured prompt to an AI tool.
+
+This feature demonstrates how effective prompt engineering can improve the relevance and quality of AI-generated responses.
+
+## Iterative AI Refinement
+
+The application supports iterative prompting, allowing users to improve AI-generated responses through repeated instructions and feedback.
+
+Users can refine responses using the following actions:
+
+- **Shorten:** Produce a more concise response.
+- **Expand:** Add relevant details and explanations.
+- **Simplify:** Make complex information easier to understand.
+- **Change Tone:** Adjust the writing style.
+- **Custom Refinement:** Provide additional instructions.
+
+A session-based version history allows users to compare original and refined responses.
+
+This approach demonstrates that prompt engineering is an iterative process rather than a single interaction.
+
+## Innovation and Creativity
+
+The application incorporates several features designed to improve user interaction and productivity.
+
+### Smart Tool Handoff
+
+Users can transfer research summaries directly into the Smart Email Generator, creating a connected workflow between AI tools.
+
+### Contextual Prompt Suggestions
+
+Each AI tool provides example prompts to help users get started and understand how to interact effectively with AI.
+
+### Before and After Prompt Comparison
+
+Users can compare their original instructions with structured CFREI prompts, demonstrating the value of effective prompt construction.
+
+### AI-Powered Refinement
+
+Users can improve existing AI outputs without restarting the entire task.
+
+## User Interface and Experience
+
+The application follows a modern Software-as-a-Service (SaaS) design approach.
+
+**Design features include:**
+
+- Professional dashboard interface.
+- Sidebar navigation.
+- Responsive desktop and mobile layouts.
+- Light and Dark Mode options.
+- Modern cards, icons and typography.
+- Intuitive forms and input fields.
+- Editable AI-generated outputs.
+- Loading indicators and error messages.
+- Accessible navigation between AI tools.
+
+The design prioritises simplicity, usability and professional presentation.
+
+## Responsible AI Practices
+
+Responsible AI is an important part of the application.
+
+The platform encourages users to understand the limitations of AI-generated content and exercise human judgement.
+
+### Key Principles
+
+**Transparency:** AI-generated responses are clearly identified.
+
+**Accuracy:** Users are encouraged to verify important information before relying on AI-generated outputs.
+
+**Privacy:** Users are advised not to submit confidential, sensitive or personal workplace information.
+
+**Bias Awareness:** The application acknowledges that AI systems may produce biased or incomplete responses.
+
+**Human Oversight:** Users retain responsibility for reviewing, editing and approving AI-generated content.
+
+### Responsible AI Disclaimer
+
+> AI-generated content may contain errors. Verify important information before use. Do not enter confidential or sensitive workplace information.
+
+## Technical Architecture
+
+The application is designed using a lightweight, frontend-focused architecture.
+
+**Technical requirements:**
+
+- No custom backend.
+- No database.
+- No user authentication or accounts.
+- Temporary browser session state for conversations and outputs.
+- Reusable interface components.
+- Secure managed AI integration where required.
+- No exposure of private API keys in frontend code.
+
+Genuine AI responses require an appropriate AI model integration. The application is designed to use supported managed AI services rather than hardcoded responses.
+
+## Development Platform
+
+The application is designed to be developed using **Lovable AI**, an AI-assisted web application development platform.
+
+Lovable is used to translate structured project requirements into a functional web application, with emphasis on responsive design, user experience and AI functionality.
+
+## Project Assessment Alignment
+
+The project addresses six assessment criteria:
+
+| Assessment Criterion             | Project Implementation                                                          |
+| -------------------------------- | ------------------------------------------------------------------------------- |
+| Relevance of the Problem         | Addresses common workplace productivity and communication challenges.           |
+| Quality of Prompt Engineering    | Implements CFREI, structured prompts and iterative refinement.                  |
+| Functionality                    | Provides interactive AI tools, editable outputs and working interface controls. |
+| Innovation and Creativity        | Introduces Smart Tool Handoff, prompt comparison and AI refinement.             |
+| Responsible AI Practices         | Promotes transparency, privacy, bias awareness and human verification.          |
+| Presentation and User Experience | Uses a responsive, professional SaaS-style interface with Light/Dark Mode.      |
+
+## Example User Workflow
+
+1. The user opens the application dashboard.
+2. The user selects the Smart Email Generator.
+3. The user enters an initial instruction.
+4. The user optionally improves the instruction using the CFREI Prompt Builder.
+5. The AI generates a professional email.
+6. The user reviews the generated response.
+7. The user selects a refinement action such as Shorten or Change Tone.
+8. The application generates an improved version.
+9. The user compares the versions, makes final edits and copies the email.
+
+This workflow demonstrates structured prompting, AI generation, iterative improvement and human oversight.
+
+## Future Improvements
+
+Potential future enhancements include:
+
+- Document upload and summarisation.
+- Meeting notes summarisation.
+- AI-powered task planning.
+- Additional workplace automation tools.
+- Exporting generated content into different file formats.
+- Optional user accounts and saved workspaces.
+
+These features are outside the initial project scope.
+
+## Conclusion
+
+The **AI Workplace Productivity Assistant** demonstrates how artificial intelligence can be applied to everyday workplace challenges through a practical, accessible and professionally designed application.
+
+By combining AI-powered productivity tools, the CFREI prompt engineering framework, iterative refinement and responsible AI practices, the project aims to improve workplace efficiency while encouraging effective and ethical AI use.
+
+The application highlights not only what AI can generate, but also how structured instructions, continuous improvement and human judgement contribute to more useful AI-assisted outcomes.
+
+---
+
+**Project:** AI Workplace Productivity Assistant
+
+**Development Platform:** Lovable AI
+
+**Project Focus:** Artificial Intelligence | Prompt Engineering | Workplace Productivity | Responsible AI

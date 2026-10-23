@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- All AI calls go through the single `runAI` server function (src/lib/ai.functions.ts) with per-tool system prompts in src/lib/prompts.ts; the app keeps state in browser session memory only, no database or accounts, per the product brief.

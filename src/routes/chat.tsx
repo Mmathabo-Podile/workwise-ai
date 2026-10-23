@@ -58,7 +58,7 @@ function ChatPage() {
   function regenerate() {
     const lastUser = messages.map((m) => m.role).lastIndexOf("user");
     if (lastUser < 0) return;
-    send(messages[lastUser].content, messages.slice(0, lastUser));
+    send(messages[lastUser]!.content, messages.slice(0, lastUser));
   }
 
   return (

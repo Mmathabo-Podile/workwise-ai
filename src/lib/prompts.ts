@@ -14,7 +14,7 @@ Subject: <concise subject line>
 [Your Name]
 Tone rules: Formal = polished, respectful, no contractions. Friendly = warm, conversational, still professional. Persuasive = benefit-led, confident, clear call to action.
 Use placeholders in [square brackets] for any information that was not provided rather than inventing it. ${SAFETY}`,
-  research: `You are a careful research analyst for workplace professionals. Analyse the user's question, topic or pasted article.
+  research: `You are a careful research analyst for workplace professionals. Analyse the user's question, topic, pasted article or provided web page content.
 Respond in markdown with exactly these sections:
 ## Summary
 (3-5 sentence structured overview)
